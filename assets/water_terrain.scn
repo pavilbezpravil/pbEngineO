@@ -1,0 +1,49 @@
+entities:
+  - uuid: 3367282954085440956
+    tag: Scene
+    SceneTransformComponent:
+      position: [0, 0, 0]
+      rotation: [0, -0, 0]
+      scale: [1, 1, 1]
+      children: [7193068985296031994, 5536664833689235849, 3730453661121589334, 7708003088071562089]
+  - uuid: 3730453661121589334
+    tag: terrain
+    SceneTransformComponent:
+      position: [0, 0, 0]
+      rotation: [0, -0, 0]
+      scale: [1, 1, 1]
+      parent: 3367282954085440956
+    TerrainComponent:
+      color: [0.0679734498, 0.700421929, 0.180052876]
+  - uuid: 5536664833689235849
+    tag: Direct Light
+    SceneTransformComponent:
+      position: [0, 0, 0]
+      rotation: [58.7625618, 6.83018925e-06, -41.6738739]
+      scale: [0.999997139, 0.999997795, 0.999997914]
+      parent: 3367282954085440956
+    DirectLightComponent:
+      color: [1, 1, 1]
+      intensity: 1
+  - uuid: 7193068985296031994
+    tag: Water
+    SceneTransformComponent:
+      position: [0, 3, 0]
+      rotation: [0, -0, 0]
+      scale: [1, 1, 1]
+      parent: 3367282954085440956
+    WaterComponent:
+      fogColor: [0.0186851211, 0.0929371044, 0.176470593]
+      fogUnderwaterLength: 5
+      softZ: 0.100000001
+  - uuid: 7708003088071562089
+    tag: Sky
+    SceneTransformComponent:
+      position: [0, 0, 0]
+      rotation: [0, -0, 0]
+      scale: [1, 1, 1]
+      parent: 3367282954085440956
+    SkyComponent:
+      directLight: 18446744073709551615
+      color: [1, 1, 1]
+      intensity: 1

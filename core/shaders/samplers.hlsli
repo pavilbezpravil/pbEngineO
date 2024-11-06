@@ -1,0 +1,12 @@
+#ifndef SAMPLERS_HEADER
+#define SAMPLERS_HEADER
+
+#include "shared/hlslCppShared.hlsli"
+
+// todo:
+SamplerState gSamplerPoint : DECLARE_REGISTER(s, SAMPLER_SLOT_WRAP_POINT, REGISTER_SPACE_COMMON);
+SamplerState gSamplerLinear : DECLARE_REGISTER(s, SAMPLER_SLOT_WRAP_LINEAR, REGISTER_SPACE_COMMON);
+SamplerState gSamplerPointClamp : DECLARE_REGISTER(s, SAMPLER_SLOT_CLAMP_POINT, REGISTER_SPACE_COMMON);
+SamplerComparisonState gSamplerShadow : DECLARE_REGISTER(s, SAMPLER_SLOT_SHADOW, REGISTER_SPACE_COMMON);
+
+#endif
