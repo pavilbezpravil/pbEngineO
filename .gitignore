@@ -1,0 +1,15 @@
+.vs
+*.sln
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+
+.vscode
+
+/bin/
+bin-int/
+
+**VTune**
+
+packages/
+packages.config
